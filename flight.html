@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/library.css">
+	<link rel="stylesheet" href="css/product2.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/css/nanoscroller.min.css">
+	<link rel="stylesheet" href="css/booking.css">
+	<link rel="stylesheet" href="css/hotel.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-2 col-sm-6">
+							<div class="logo">
+								<h1>Traveling</h1>
+							</div>
+						</div>
+	<!--				End	Logo-->
+						<div class="col-10 align-s-center col-sm-6">
+
+							<nav class="menu" id="myLinks">
+								<ul class="justify-end">
+									<li><a class="" href="index.html">Home</a></li>
+									<li><a href="index2.html">Destination</a></li>
+									<li><a href="#">Flight</a></li>
+									<li><a href="#hc">About us</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Contact us</a></li>
+								</ul>
+								<a href="#" class="close" onClick="myFunction()">X</a>
+							</nav>
+							<a href="#" class="nav-mobile" onClick="myFunction()">&#9776;</a>
+
+						</div>
+	<!--					End Navigation-->
+					</div>
+				</div>
+		</div>
+<main>
+	<section class="booking">
+	<h1 class="h1 text-center text-primary headline">Flight</h1>
+		<div class="divided"></div>
+		<div class="wrap" data-pos="0">
+		<div class="headbar ">
+			
+			<i class="zmdi zmdi-arrow-left btnBack text-center"></i> <span>Flight Booking App</span>
+		</div>
+		<div class="headering">
+			<div class="bg"></div>
+			<div class="filter"></div>
+			<div class="title">
+				<div class="fromPlace">
+					<span>S</span><span>G</span><span>N</span>
+				</div>
+				<span class="separator"><i class="zmdi zmdi-airplane"></i></span>
+				<div class="toPlace">
+					<span>M</span><span>R</span><span>S</span>
+				</div>
+			</div>
+			<div class="map"></div>
+		</div>
+
+		<div class="content">
+			<section>
+				<div class="form">
+					<div class="control select">
+						<div class="control-head">
+							<i class="zmdi zmdi-flight-takeoff"></i>
+							<span class="close"><i class="zmdi zmdi-close"></i></span>
+							<div>
+								<h6>From</h6>
+								<span class="airport-name" data-role="from">SGN, Tan San Nhat Airport</span>
+							</div>			
+						</div>
+						<div class="control-body">
+							<ul class="select-index"></ul>
+							<div class="nano">
+							    <div class="nano-content">
+							    	<ul class="select-data"></ul>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="control select">
+						<div class="control-head">
+							<i class="zmdi zmdi-flight-land"></i>
+							<span class="close"><i class="zmdi zmdi-close"></i></span>
+							<div>
+								<h6>To</h6>
+								<span class="airport-name" data-role="to">MRS, Marseille Provence Airport</span>
+							</div>			
+						</div>
+						<div class="control-body">
+							<ul class="select-index"></ul>
+							<div class="nano">
+							    <div class="nano-content">
+							    	<ul class="select-data"></ul>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="control dateinput">
+						<div class="control-head">
+							<i class="zmdi zmdi-calendar"></i>
+							<span class="close"><i class="zmdi zmdi-close"></i></span>
+							<div class="control-item">
+								<h6>Depar</h6>
+								<span>MON, 8 May</span>
+							</div>
+							<div class="control-item">
+								<h6>Return</h6>
+								<span>One Way</span> <!--Quitar si no se selecciona-->
+							</div>
+						</div>
+						<div class="control-body">
+							<div class="info-message">
+								<i class="zmdi zmdi-info"></i>
+								<!-- <span>Select the depar date then the return date if you need a round trip ticket</span> -->
+								<span>By the moment theres only One Way tickets, thanks.</span>
+							</div>
+							<div class="calendar">
+								<div class="month">
+									<i class="zmdi zmdi-chevron-left"></i>
+									<span>May</span>
+									<i class="zmdi zmdi-chevron-right"></i>
+								</div>
+								<div class="week">
+									<span>S</span>
+									<span>M</span>
+									<span>T</span>
+									<span>W</span>
+									<span>T</span>
+									<span>F</span>
+									<span>S</span>
+								</div>
+								<div class="days"></div>
+							</div>
+						</div>
+					</div>
+					<div class="control radio passengers">
+						<i class="zmdi zmdi-accounts"></i>
+						<div class="control-item">
+							<h6>Passengers</h6>
+							<label>
+								<input type="radio" name="passengers" value="0" checked="checked">
+								<div><span>1</span>&times;<i class="zmdi zmdi-male-alt"></i><small>Adults</small></div>
+							</label>
+							<label>
+								<input type="radio" name="passengers" value="1">
+								<div><span>0</span>&times;<i class="zmdi zmdi-face"></i><small>Kids</small></div>
+							</label>
+							<label>
+								<input type="radio" name="passengers" value="2">
+								<div><span>0</span>&times;<i class="zmdi zmdi-walk"></i><small>Elders</small></div>
+							</label>
+						</div>
+						<section class="spinner">
+							<button data-action="plus"><i class="zmdi zmdi-plus"></i></button>
+							<button data-action="minus"><i class="zmdi zmdi-minus"></i></button>
+						</section>
+					</div>
+					<div class="control radio">
+						<i class="zmdi zmdi-airline-seat-recline-extra"></i>
+						<div class="control-item">
+							<h6 style="margin-bottom: 8px">Class</h6>
+							<label>
+								<input type="radio" name="seat" value="Economy" checked="checked">
+								<span>Economy</span>
+							</label>
+							<label>
+								<input type="radio" name="seat" value="Business">
+								<span>Business</span>
+							</label>
+							<label>
+								<input type="radio" name="seat" value="First Class">
+								<span>First Class</span>
+							</label>
+						</div>
+					</div>
+					<div class="control">
+						<button class="btnSearch">Search Flights</button>
+					</div>
+
+				</div>
+				<div class="list">
+					<div class="nano">
+					    <div class="nano-content">
+					    		    	
+					    </div>
+					</div>					
+				</div>
+				
+				<div class="ticket">
+					<section>
+						
+					</section>
+					<button class="btnBook">BOOK FLIGHT</button>
+					<!-- <button class="btnHome">BACK TO HOME</button> -->
+					<div class="loader">Loading...</div>
+				</div>
+
+			</section>
+		</div>		
+	
+	</div>
+	</section>
+	<section class="hotel">
+		<div class="container">
+				<div class="cards row">
+   								<div class="col-12">
+							<h1 class="h1 text-center text-primary headline">Hotels</h1>
+									<div class="divided"></div>
+
+		<div class="card col-12">
+      <div class="card__img">
+          <picture>
+<!--
+            <source media="(max-width: 320px)" 
+                    srcset="https://images.unsplash.com/photo-1530629013299-6cb10d168419?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&h=200&q=80">
+
+            <source media="(min-width: 538px)" 
+                    srcset="https://images.unsplash.com/photo-1530629013299-6cb10d168419?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=200&q=1500">
+-->
+
+            <img src="https://images.unsplash.com/photo-1530629013299-6cb10d168419?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=200&q=1500">
+          </picture>
+      </div>
+      <div class="card__details">
+        <h3 for="cozyroom">Cozying Room</h3>
+        <div class="address">Clipe</div>
+        <div class="price">
+          <div class="star">
+            <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+            <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+            <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+            <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+          </div>
+          <div class="price__l">
+            <span class="price__label">150$ /</span>
+            <span class="measure__label">night</span>
+          </div>
+        </div>
+        <button>Detail</button>
+      </div>
+      <span class="credit-img">image by: unsplash.com/@jazzband</span>
+    </div>
+
+    <div class="card col-12">
+      <div class="card__img">
+          <picture>
+<!--
+            <source media="(max-width: 400px)" 
+                    srcset="https://images.unsplash.com/photo-1507038772120-7fff76f79d79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&h=200&q=80">
+
+            <source media="(min-width: 481px)" 
+                    srcset="https://images.unsplash.com/photo-1507038772120-7fff76f79d79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=200&q=80">
+-->
+
+
+            <img src="https://images.unsplash.com/photo-1507038772120-7fff76f79d79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&h=200&q=80">
+          </picture>
+      </div>
+      <div class="card__details">
+        <h3 for="tomato">House sweet</h3>
+        <div class="address">Gandaria</div>
+        <div class="price"> 
+          <div class="star">
+            <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+            <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+            <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+            <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+          </div>
+          <div class="price__l">
+            <span class="price__label">250$ /</span>
+            <span class="measure__label">night</span>
+          </div>
+        </div>
+        <button>Detail</button>
+      </div>
+      <span class="credit-img">image by: unsplash.com/@antocave</span>
+    </div>
+
+    <div class="card col-12">
+        <div class="card__img">
+            <picture>
+              <source media="(max-width: 400px)" 
+                      srcset="https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&h=200&q=80">
+  
+              <source media="(min-width: 481px)" 
+                      srcset="https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=200&q=100">
+  
+              <img src="https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&h=200&q=80">
+            </picture>
+        </div>
+        <div class="card__details">
+          <h3 for="cozyroom">Makau Homestay</h3>
+          <div class="address">Cipete</div>
+          
+          <div class="price">
+            <div class="star">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+            </div>
+            <div class="price__l">
+              <span class="price__label">250$ /</span>
+              <span class="measure__label">night</span>
+            </div>
+          </div>
+          <button>Detail</button>
+        </div>
+        <span class="credit-img">image by: unsplash.com/@sidekix</span>
+    </div>
+
+    <div class="card col-12">
+        <div class="card__img">
+            <picture>
+<!--
+              <source media="(max-width: 320px)" 
+                      srcset="https://images.unsplash.com/photo-1545022388-9e6d95c77174?ixlib=rb-1.2.1&auto=format&fit=crop&w=335&h=200&q=80">
+  
+              <source media="(max-width: 500px)" 
+                      srcset="https://images.unsplash.com/photo-1545022388-9e6d95c77174?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=200&q=100">
+  
+-->
+              <img src="https://images.unsplash.com/photo-1545022388-9e6d95c77174?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=200&q=80">
+            </picture>
+        </div>
+        <div class="card__details">
+          <h3 for="cozyroom">Bogor Cozy Homestay</h3>
+          <div class="address">Bogor</div>
+          
+          <div class="price">
+            <div class="star">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+            </div>
+            <div class="price__l">
+              <span class="price__label">150$ /</span>
+              <span class="measure__label">night</span>
+            </div>
+          </div>
+          <button>Detail</button>
+        </div>
+        <span class="credit-img">image by: unsplash.com/@josesorianophoto</span>
+    </div>
+
+    <div class="card col-12">
+        <div class="card__img">
+            <picture>
+<!--
+              <source media="(max-width: 320px)" 
+                      srcset="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&h=200&q=80">
+  
+              <source media="(max-width: 500px)" 
+                      srcset="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=200&q=100">
+-->
+  
+              <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=200&q=80">
+            </picture>
+        </div>
+        <div class="card__details">
+          <h3 for="cozyroom">Tribeca BedMy</h3>
+          <div class="address">Jakarta</div>
+          
+          <div class="price">
+            <div class="star">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+            </div>
+            <div class="price__l">
+              <span class="price__label">100$ /</span>
+              <span class="measure__label">night</span>
+            </div>
+          </div>
+          <button>Detail</button>
+        </div>
+        <span class="credit-img">image by: unsplash.com/@chastityco</span>
+    </div>
+
+    <div class="card col-12">
+        <div class="card__img">
+            <picture>
+<!--
+              <source media="(max-width: 320px)" 
+                      srcset="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&h=200&q=80">
+  
+              <source media="(max-width: 500px)" 
+                      srcset="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=200&q=100">
+-->
+  
+              <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=200&q=80">
+            </picture>
+        </div>
+        <div class="card__details">
+          <h3 for="cozyroom">Les't Carrot</h3>
+          <div class="address">Bandung</div>
+          
+          <div class="price">
+            <div class="star">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+              <img src="https://image.flaticon.com/icons/svg/291/291205.svg" alt="">
+            </div>
+            <div class="price__l">
+              <span class="price__label">IDR 1750K /</span>
+              <span class="measure__label">night</span>
+            </div>
+          </div>
+          <button>Detail</button>
+        </div>
+        <span class="credit-img">image by: unsplash.com/@ialicantemediterraneanhomes</span>
+    </div>
+
+
+  </div>
+			</div>
+			</div>
+	</section>
+</main>
+<footer>
+			<div class="container">
+				<div class="row text-white justify-between">
+					<div class="col-5">
+						<div class="about">
+							<div class="footer-logo mb-3"><h1 style="color: #fff">Traveling</h1>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="row g-0">
+							<div class="col-6">
+								<div class="quick-menu">
+									<h3 class="h3 text-white">Company</h3>
+									<ul class="footer-menu">
+										<li><a href="#">Home</a></li>
+										<li><a href="destination.html">Destination </a></li>
+										<li><a href="flight.html">Flight and Hotels</a></li>
+										<li><a href="#">Blog</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="col-6">
+								<div class="quick-menu">
+									<h3 class="h3 text-white">Download</h3>
+									<ul class="footer-menu">
+										<img src="img/tải xuống.png">
+										<img src="img/4484816_apple_vi_badge_web_generic.png">
+									</ul>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<!--Header-->
+	
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/header.js"></script>
+	
+<!--	Product-->
+	
+	<script src="js/product2.js"></script>
+	
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+	</script>
+	
+	
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script  src="js/booking.js"></script>
+</body>
+</html>
+
